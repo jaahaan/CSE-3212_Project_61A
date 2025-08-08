@@ -17,7 +17,7 @@ class _StatefulWidgetPageState extends State<StatefulWidgetPage> {
         height: 400,
         child: Text(
           "StatefulWidget Page",
-          style: GoogleFonts.roboto(
+          style: GoogleFonts.lobster(
             textStyle: TextStyle(
               color: const Color.fromARGB(255, 169, 200, 216),
               fontWeight: FontWeight.bold,
