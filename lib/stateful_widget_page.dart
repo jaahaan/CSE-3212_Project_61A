@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class StatefulWidgetPage extends StatefulWidget {
   const StatefulWidgetPage({super.key});
@@ -9,23 +8,13 @@ class StatefulWidgetPage extends StatefulWidget {
 }
 
 class _StatefulWidgetPageState extends State<StatefulWidgetPage> {
+  final TextEditingController controller = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SizedBox(
-        width: 500,
-        height: 400,
-        child: Text(
-          "StatefulWidget Page",
-          style: GoogleFonts.lobster(
-            textStyle: TextStyle(
-              color: const Color.fromARGB(255, 169, 200, 216),
-              fontWeight: FontWeight.bold,
-              fontSize: 20,
-            ),
-          ),
-        ),
-      ),
+      appBar: AppBar(title: Text("Stateful Widget Page")),
+      body: Text("StatefulWidgetPage"),
     );
   }
 }

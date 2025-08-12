@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class StatelessWidgetPage extends StatelessWidget {
   const StatelessWidgetPage({super.key});
@@ -7,18 +6,14 @@ class StatelessWidgetPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SizedBox(
-        width: 500,
-        height: 400,
-        child: Text(
-          "StatelessWidget Page",
-          style: GoogleFonts.lobster(
-            textStyle: TextStyle(
-              color: Colors.red[200],
-              fontWeight: FontWeight.bold,
-              fontSize: 20,
-            ),
-          ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            ElevatedButton(onPressed: () {}, child: Text("Elevated")),
+            TextButton(onPressed: () {}, child: Text("Text")),
+            IconButton(onPressed: () {}, icon: Icon(Icons.login)),
+            OutlinedButton(onPressed: () {}, child: Text("Outlined")),
+          ],
         ),
       ),
     );
