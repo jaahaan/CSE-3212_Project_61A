@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:project_61a/home_page.dart';
+import 'package:project_61a/converter_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,8 +12,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.light(),
-      home: HomePage(),
+      theme: ThemeData.dark(),
+      home: ConverterPage(),
     );
   }
 }
