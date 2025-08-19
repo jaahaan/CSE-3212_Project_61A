@@ -46,9 +46,9 @@ class _ConverterPageState extends State<ConverterPage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text("USD "),
+                    Text("USD ", style: TextStyle(fontSize: 20)),
                     Icon(Icons.swap_horiz),
-                    Text(" BDT"),
+                    Text(" BDT", style: TextStyle(fontSize: 20)),
                   ],
                 ),
 
@@ -77,7 +77,7 @@ class _ConverterPageState extends State<ConverterPage> {
 
                 SizedBox(height: 20),
 
-                Text("BDT $result"),
+                Text("BDT $result", style: TextStyle(fontSize: 20)),
               ],
             ),
           ),
